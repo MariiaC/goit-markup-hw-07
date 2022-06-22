@@ -1,0 +1,120 @@
+/* Постоянные клиенты*/
+.constant-clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+.client-galery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-galery__icon {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    margin-bottom: 94px;
+
+    transition: border-color 250ms $timng-function;
+
+&:hover,
+    &:focus {
+        border-color: $accent;
+    }
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+.icon-ya-ko {
+    width: 41x;
+    height: 47px;
+    background-position: center;
+    fill: $icon-color;
+
+    transition: fill 250ms $timng-function;
+}
+
+.client-galery__icon:hover .icon-ya-ko,
+.client-galery__icon:focus .icon-ya-ko {
+    fill: $accent;
+}
+
+.icon-tagline-here {
+    width: 40x;
+    height: 52px;
+    background-position: center;
+    fill: $icon-color;
+
+    transition: fill 250ms $timng-function;
+}
+
+.client-galery__icon:hover .icon-tagline-here,
+.client-galery__icon:focus .icon-tagline-here {
+    fill: $accent;
+}
+
+.icon-company {
+    width: 43x;
+    height: 41px;
+    background-position: center;
+    fill: $icon-color;
+
+    transition: fill 250ms $timng-function;
+}
+
+.client-galery__icon:hover .icon-company,
+.client-galery__icon:focus .icon-company {
+    fill: $accent;
+}
+
+.icon-foster-peters {
+    width: 84x;
+    height: 41px;
+    background-position: center;
+    fill: $icon-color;
+
+    transition: fill 250ms $timng-function;
+}
+
+.client-galery__icon:hover .icon-foster-peters,
+.client-galery__icon:focus .icon-foster-peters {
+    fill: $accent;
+}
+
+.icon-brand {
+    width: 63x;
+    height: 45px;
+    background-position: center;
+    fill: $icon-color;
+
+    transition: fill 250ms $timng-function;
+}
+
+.client-galery__icon:hover .icon-brand,
+.client-galery__icon:focus .icon-brand {
+    fill: $accent;
+}
+
+.icon-tag-line {
+    width: 94px;
+    height: 44px;
+    background-position: center;
+    fill: $icon-color;
+
+    transition: fill 250ms $timng-function;
+}
+
+.client-galery__icon:hover .icon-tag-line,
+.client-galery__icon:focus .icon-tag-line {
+    fill: $accent;
+}

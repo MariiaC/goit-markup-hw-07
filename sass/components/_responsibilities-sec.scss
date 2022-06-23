@@ -11,21 +11,21 @@
   margin-bottom: 50px;
 }
 
-.responsibilities-list{
+.responsibilities-list {
   display: flex;
 }
 
 .responsibilities-list {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-
   &__image {
     display: block;
   }
 
   &__item {
     position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   &__text {

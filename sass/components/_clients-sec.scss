@@ -27,12 +27,13 @@
     transition: border-color 250ms $timng-function;
 
 &:hover,
-    &:focus {
+&:focus {
         border-color: $accent;
     }
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+}
+
+.client-galery__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .icon-ya-ko {

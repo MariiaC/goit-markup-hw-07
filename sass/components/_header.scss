@@ -1,36 +1,32 @@
 /*page-header*/
-.nav {
-  display: flex;
-  align-items: center;
 
-  &__logo {
-      color: $primary-text;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.2;
-      margin-right: 93px;
-    }
-  
-    &__web {
-      color: $accent;
-    }
-}
-.main-nav {
-  display: flex;
-  align-items: center;
-}
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.header-portfolio {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
-}
 
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    color: $primary-text;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 93px;
+  }
+
+  &__web {
+    color: $accent;
+  }
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 /* список навигации header*/
 .site-nav {
@@ -56,7 +52,7 @@
     letter-spacing: 0.02em;
     /*Переход*/
     transition: color 250ms $timng-function;
-    
+
     &:hover,
     &:focus {
       color: $accent;
@@ -106,5 +102,28 @@
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
+  }
+}
+
+/*Подчеркивание*/
+
+.site-nav {
+  &__current-page {
+    display: block;
+    position: relative;
+  }
+}
+
+.site-nav {
+  &__current-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: -31px;
   }
 }

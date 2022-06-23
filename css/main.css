@@ -49,6 +49,11 @@ body {
 }
 
 /*page-header*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -68,17 +73,6 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
-}
-
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.header-portfolio {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
 }
 
 /* список навигации header*/
@@ -141,6 +135,24 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+
+/*Подчеркивание*/
+.site-nav__current-page {
+  display: block;
+  position: relative;
+}
+
+.site-nav__current-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: -31px;
 }
 
 /*первая секция Hero*/
@@ -292,6 +304,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.client-galery__item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .client-galery__icon {
   width: 170px;
@@ -307,9 +322,8 @@ body {
 .client-galery__icon:hover, .client-galery__icon:focus {
   border-color: #2196f3;
 }
-
-.client-galery__item:not(:last-child) {
-  margin-right: 30px;
+.client-galery__icon:hover .client-galery__icon__svg, .client-galery__icon:focus .client-galery__icon__svg {
+  fill: #2196f3;
 }
 
 .icon-ya-ko {
@@ -320,22 +334,12 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-galery__icon:hover .icon-ya-ko,
-.client-galery__icon:focus .icon-ya-ko {
-  fill: #2196f3;
-}
-
 .icon-tagline-here {
   width: 40x;
   height: 52px;
   background-position: center;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-galery__icon:hover .icon-tagline-here,
-.client-galery__icon:focus .icon-tagline-here {
-  fill: #2196f3;
 }
 
 .icon-company {
@@ -346,22 +350,12 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-galery__icon:hover .icon-company,
-.client-galery__icon:focus .icon-company {
-  fill: #2196f3;
-}
-
 .icon-foster-peters {
   width: 84x;
   height: 41px;
   background-position: center;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-galery__icon:hover .icon-foster-peters,
-.client-galery__icon:focus .icon-foster-peters {
-  fill: #2196f3;
 }
 
 .icon-brand {
@@ -372,22 +366,12 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-galery__icon:hover .icon-brand,
-.client-galery__icon:focus .icon-brand {
-  fill: #2196f3;
-}
-
 .icon-tag-line {
   width: 94px;
   height: 44px;
   background-position: center;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-galery__icon:hover .icon-tag-line,
-.client-galery__icon:focus .icon-tag-line {
-  fill: #2196f3;
 }
 
 /*четвертая секция team*/
@@ -937,6 +921,11 @@ body {
 .checkbox__button:hover, .checkbox__button:focus {
   background-color: #188ce8;
   cursor: pointer;
+}
+
+/*Подчеркивание*/
+.bottomline {
+  border-bottom: 1px solid #ececec;
 }
 
 /*основная секция portfolio*/
